@@ -1,0 +1,285 @@
+
+/* GENERAL STYLING */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+
+/* HEADER */
+
+header {
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+header p {
+    margin: 5px 0 0;
+}
+
+
+/* NAVIGATION */
+
+nav {
+    background-color: #374151;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #3b82f6;
+    color: white;
+}
+
+
+/* MAIN CONTENT */
+
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #dddddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    color: #1f2937;
+    text-align: center;
+}
+
+
+/* TABLE STYLING */
+
+/* ID selector for the table heading */
+
+#table-title {
+    font-size: 28px;
+    color: #2563eb;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid #d1d5db;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Table header background */
+
+th {
+    background-color: #1f2937;
+    color: white;
+    font-weight: bold;
+}
+
+/* Alternate row colors */
+
+tbody tr:nth-child(even) {
+    background-color: #f1f5f9;
+}
+
+/* Highlighted row */
+
+tbody tr.highlight-row {
+    background-color: #dbeafe;
+    font-weight: bold;
+}
+
+/* Summary row */
+
+tbody tr.summary-row {
+    background-color: #e5e7eb;
+    font-weight: bold;
+}
+
+
+/* FORM SECTION */
+
+.form-section > p {
+    text-align: center;
+}
+
+
+/* FORM CONTAINER */
+
+#feedback-form {
+    width: 450px;
+    max-width: 100%;
+    margin: 25px auto;
+    padding: 30px;
+    background-color: #f9fafb;
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+}
+
+
+/* FORM GROUP */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+
+/* LABELS */
+
+.form-group > label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+
+/* INPUTS, SELECT AND TEXTAREA */
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    background-color: white;
+}
+
+
+/* INPUT FOCUS EFFECT */
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #3b82f6;
+    outline-offset: 1px;
+}
+
+
+/* RADIO BUTTONS */
+
+.radio-group {
+    margin-top: 10px;
+}
+
+.radio-group label {
+    display: inline-block;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.radio-group input {
+    margin-right: 5px;
+}
+
+
+/* TEXTAREA */
+
+textarea {
+    resize: vertical;
+}
+
+
+/* SUBMIT BUTTON */
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 600px) {
+
+    main {
+        padding: 0 12px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    #feedback-form {
+        width: 100%;
+        padding: 20px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+        font-size: 13px;
+    }
+
+}
